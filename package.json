@@ -1,5 +1,6 @@
 {
   "name": "stars-match",
+  "homepage": "https://andrewparr.github.io/stars-match",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
