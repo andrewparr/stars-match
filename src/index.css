@@ -5,6 +5,7 @@
 
 .body {
   display: flex;
+  align-items: center;
 }
 
 .help {
@@ -13,16 +14,41 @@
   text-align: center;
 }
 
+@media (orientation: landscape) {
+  .body {
+    flex-direction: row;
+  }
+  .left {
+    width: 240px;
+    height: 240px;
+  }
+  .right {
+    width: 240px;
+    height: 220px;
+  }
+}
+@media (orientation: portrait) {
+  .body {
+    flex-direction: column;
+  }
+  .left {
+    width: 260px;
+    height: 240px;
+  }
+  .right {
+    width: 240px;
+    height: 240px;
+  }
+}
+
 .left {
   text-align: center;
-  width: 50%;
   border: thin solid #ddd;
 }
 
 .right {
   text-align: center;
   padding: 10px;
-  width: 50%;
   border: thin solid #ddd;
 }
 
@@ -55,6 +81,7 @@
   color: #666;
   margin-top: 3px;
   margin-left: 3px;
+  text-align: center;
 }
 
 .game-done .message {
